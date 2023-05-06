@@ -33,7 +33,7 @@ func Bootstrap() IBootstrap {
 	flag.IntVar(&global.RunPort, "port", 8080, "默认：8080")
 	flag.Parse()
 
-	//创建上传文件夹
+	//创建上传文件夹1
 	_ = os.Mkdir(filepath.Join(global.RootPath, global.UploadDir), os.ModePerm)
 
 	//设置日志的格式
